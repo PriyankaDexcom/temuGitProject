@@ -1,0 +1,5 @@
+ext.versions = [
+        appiumVersion: '7.6.0',
+        testng: '7.3.0',
+        allureTestNGVersion : '2.18.1',
+]

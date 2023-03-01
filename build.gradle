@@ -1,0 +1,42 @@
+buildscript {
+    apply from: 'versions.gradle'
+}
+
+plugins {
+    id 'java'
+    id 'checkstyle'
+    id 'io.qameta.allure' version "2.10.0"
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //implementation group: 'org.testng', name: 'testng', version: '7.3.0'
+    implementation "org.testng:testng:$versions.testng"
+    implementation "io.appium:java-client:$versions.appiumVersion"
+    implementation ('com.google.guava:guava:28.0-jre') {force=true}
+    implementation "io.qameta.allure:allure-testng:$versions.allureTestNGVersion"
+}
+
+test {
+    useTestNG()
+}
+
+checkstyle {
+    toolVersion = '8.22'
+    configFile = file("config/checkstyle/checkstyle.xml")
+    showViolations = true
+    ignoreFailures = false
+}
+
+allure {
+    version = '2.8.1'
+    autoconfigure = true
+    aspectjweaver = true
+    String allureJavaVersion = '2.8.1'
+}

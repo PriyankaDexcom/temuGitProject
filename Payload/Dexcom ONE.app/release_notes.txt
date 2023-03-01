@@ -1,0 +1,1 @@
+This DX1 IPA is obfuscated. The build variant is Prod V&V.

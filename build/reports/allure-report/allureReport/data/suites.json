@@ -1,0 +1,29 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Gradle suite",
+    "children" : [ {
+      "name" : "Gradle test",
+      "children" : [ {
+        "name" : "sampleTest",
+        "children" : [ {
+          "name" : "login",
+          "uid" : "d4ccf2ac933a057e",
+          "parentUid" : "e929ebdbd08c8c94b3a64d45f94fca3b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1677542515293,
+            "stop" : 1677542515297,
+            "duration" : 4
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "e929ebdbd08c8c94b3a64d45f94fca3b"
+      } ],
+      "uid" : "6edf7b6d6ec097775c478f55491c2a49"
+    } ],
+    "uid" : "350742de9190af4e6a560acc7ec0396c"
+  } ]
+}
